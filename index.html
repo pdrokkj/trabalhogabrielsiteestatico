@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site com 3 páginas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Criar um site com três páginas:</h1>
+      
+      <div id="page1" class="page">
+        <h2>Página 1 - Explicar o que é uma publicação de páginas estáticas</h2>
+        <p>Uma publicação de páginas estáticas se refere à criação de sites web cujo conteúdo não muda dinamicamente. Essas páginas são armazenadas no servidor web e servidas aos usuários sem necessidade de processamento adicional no servidor.</p>
+        <div class="navigation">
+          <button onclick="showPage('page2')">Próxima Página</button>
+        </div>
+      </div>
+      
+      <div id="page2" class="page" style="display: none;">
+        <h2>Página 2 - Explicar o que é o Ubuntu e a principal vantagem de usá-lo como servidor de sites dinâmicos</h2>
+        <p>O Ubuntu é um sistema operacional de código aberto, baseado no Linux, que é amplamente utilizado como servidor web. Uma das principais vantagens de usar o Ubuntu como servidor de sites dinâmicos é a sua estabilidade, segurança e facilidade de configuração e manutenção.</p>
+        <div class="navigation">
+          <button onclick="showPage('page3')">Próxima Página</button>
+          <button onclick="showPage('page1')">Página Anterior</button>
+        </div>
+      </div>
+      
+      <div id="page3" class="page" style="display: none;">
+        <h2>Página 3 - Explicar alguns comandos básicos de ubuntu</h2>
+        <p>Alguns comandos básicos do Ubuntu incluem:</p>
+        <ul>
+          <li>sudo - Permite executar comandos com privilégios de administrador</li>
+          <li>apt-get - Gerenciador de pacotes para instalar, atualizar e remover software</li>
+          <li>ls - Lista os arquivos e diretórios em um diretório</li>
+          <li>cd - Navega entre os diretórios</li>
+          <li>mkdir - Cria um novo diretório</li>
+        </ul>
+        <div class="navigation">
+          <button onclick="showPage('page1')">Página Inicial</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
